@@ -1,0 +1,174 @@
+body {
+    background-image: url('imagen-index.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que la imagen se quede quieta al hacer scroll */
+    text-align: center;
+    margin: 0;
+}
+
+.div1 {
+    background-color: bisque;
+    padding: 30px 0; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombrita sutil para separar el encabezado */
+}
+
+.tituloprin {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #4a3b32;
+    margin: 0;
+}
+
+.moda {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #8c6b5d; /* Tono marrón/rosado apagado */
+    margin-top: 10px;
+}
+
+h2 {
+    color: #4a3b32;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las prendas bajen de línea si no entran */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 25px; /* Espacio entre cada prenda */
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el catálogo en la página */
+}
+
+/* Tarjeta individual de cada prenda */
+.prenda {
+    background-color: rgb(241, 224, 202); /* Un cremita muy suave (floral white) */
+    border: 2px solid #8c6b5d; /* Borde rosita claro (light pink) */
+    border-radius: 12px; /* Bordes redondeados */
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra sutil */
+    transition: transform 0.3s ease; /* Efecto suave de movimiento */
+}
+
+/* Efecto al pasar el mouse por encima de la prenda */
+.prenda:hover {
+    transform: translateY(-5px); /* Se levanta un poquito */
+}
+
+/* Imágenes de la ropa */
+.img-prenda {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Recorta la imagen para que quede cuadrada y prolija */
+    border-radius: 8px;
+}
+
+/* Textos dentro de la tarjeta */
+.prenda h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #4a3b32;
+    margin: 10px 0 5px 0;
+    font-size: 22px;
+}
+
+.precio {
+    color: #4a3b32; 
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Botón de acción */
+.btn-accion {
+    background-color: #e08c72; 
+    color: #4a3b32; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Botón bien redondeado */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-accion:hover {
+    background-color: #dc8065; /* color ligeramente más oscuro al pasar el mouse */
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra los botones perfectamente */
+    gap: 15px; /* Espacio entre los botones */
+}
+
+/* Estilo de los botones del menú */
+.btn-nav {
+    text-decoration: none; /* Le saca el subrayado feo a los links */
+    background-color: #e08c72; 
+    color: #fffaf0; 
+    padding: 10px 20px;
+    border-radius: 20px; /* Botones redondeados */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #8c6b5d; /* Se pone marrón oscuro al pasar el mouse */
+}
+
+/* ESTILOS PARA FORMULARIOS (Login y Subir Ropa) */
+
+.form-div {
+    background-color: rgb(241, 224, 202); 
+    border: 2px solid #8c6b5d; 
+    border-radius: 12px;
+    width: 320px;
+    margin: 50px auto; /* Lo centra horizontalmente y le da espacio arriba */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.form-div h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.form-div label {
+    display: block; /* Pone la etiqueta arriba del cajón de texto */
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4a3b32;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.input-form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #8c6b5d;
+    border-radius: 8px;
+    box-sizing: border-box; /* Evita que el padding ensanche de más el input */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pequeño efecto para cuando hacés clic en el cajón de texto */
+.input-form:focus {
+    outline: none;
+    border-color: #e08c72;
+    box-shadow: 0 0 5px rgba(224, 140, 114, 0.5);
+}
+
+.volver {
+    color: #4a3b32;
+    text-decoration: none;
+}

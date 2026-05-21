@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender Ropa - La Tiendita</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="código.js"></script>
+</head>
+<body>
+    <div class="div1">
+        <h1 class="tituloprin">La Tiendita</h1>
+        <p class="moda">· Moda circular ·</p>
+        
+        <nav class="navegacion">
+            <a href="index.html" class="btn-nav">Volver al Inicio</a>
+        </nav>
+    </div>
+
+    <hr>
+
+    <div class="form-div">
+        <h2>Subir prenda para vender</h2>
+        
+        <form>
+            <p>¿Qué vas a vender? 
+              <br>  
+              <input type="text" id="nombre-prenda" class="input-form" placeholder="Ej: Camisa con rosas" required>
+            </p>
+
+            <p>Precio($) 
+              <br>  
+              <input type="number" id="precio-prenda" class="input-form" placeholder="Ej: 15000" required>
+            </p>
+
+            <p>Foto de la prenda 
+              <br>  
+              <input type="file" id="foto-prenda" class="input-form" accept="image/*" required>
+            </p>
+
+            <br>
+            <p><button type="button" onclick="publicarPrenda()" class="btn-accion">Publicar Prenda</button></p>
+
+        </form>
+    </div>

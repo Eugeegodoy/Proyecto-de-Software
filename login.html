@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - La Tiendita</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="código.js"></script>
+</head>
+<body>
+    <div class="div1">
+        <h1 class="tituloprin">La Tiendita</h1>
+        <p class="moda">· Moda circular ·</p>
+    </div>
+
+    <hr>
+    
+    <div class="form-div">
+
+        <h2>Registro e Ingreso</h2>
+        
+        <form>
+            <p>Usuario: <input type="text" id="usuario" placeholder="Indique su nombre de usuario" required></p>
+            <p>Contraseña: <input type="password" id="clave" placeholder="Indique su contraseña" required></p>
+            <p>Email: <input type="email" id="email" placeholder="indique su email" required></p>
+            <br>
+            <p><button type="button" onclick="validar()" class="btn-accion"> Ingresar </button></p>
+            <p><button type="button" onclick="limpiar()" class="btn-accion"> Limpiar </button></p> 
+        </form>
+        
+        <p class="volver"> <a href="index.html"> Volver al catálogo </a> </p>
+    </div>
+
+</body>
+</html>
